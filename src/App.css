@@ -1,0 +1,7 @@
+.App {
+  /* background-image: url(../public/library-bg.jpg); */
+  background-size: contain;
+  height: 100dvh;
+  text-align: center;
+  width: 100dvw;
+}
