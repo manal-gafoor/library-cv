@@ -16,14 +16,13 @@
 }
 
 .book {
-  font-size: 48px;
   position: absolute;
-  top: 31%;
+  top: 30.9%;
   left: 56.6%;
   transform: translate(0, -100%);
-  width: 19px;
-  height: 85px;
-  
+  width: 1.8%;
+  height: 14%;
+  cursor: pointer;
 }
 
 .book.glow {
@@ -44,45 +43,3 @@
     box-shadow: 0 0 10px 0px #fff, 0 0 20px 0px rgb(169, 252, 252);
   }
 }
-
-/* .glow::before,
-.glow::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: calc(50% - 5px);
-  left: calc(50% - 60px);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 1;
-  transform-origin: 60px;
-  animation: spin 3s ease-in-out infinite forwards;
-}
-
-.glow::before {
-  top: calc(50% - 10px);
-  left: calc(50% + 50px);
-  animation: spin 3s ease-in-out infinite backwards;
-  transform-origin: -50px;
-}
-
-
-
-@keyframes spin {
-  0% {
-    opacity: 0;
-    transform: rotate(0deg);
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(360deg);
-  }
-} */
