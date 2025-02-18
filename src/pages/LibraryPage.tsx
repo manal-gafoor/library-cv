@@ -10,7 +10,9 @@ const LibraryPage = () => {
             <img src={"library-bg.jpg"} height="2848" width="4288" className="img" alt='library' />
         </div>
 
-        <Book />
+        <div className="bookshelf">
+          <Book />
+        </div>
     </div>
   );
 }

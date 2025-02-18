@@ -1,0 +1,36 @@
+.wrapper {
+    background-color: transparent;
+    width: 66rem;
+    height: 45rem;
+    display: flex;
+}
+
+.cover {
+    width: 50%;
+    height: 100%;
+    background-color: #6B6F58;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.2);
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+}
+
+.cover.cover-left {
+    z-index: 1;
+}
+
+.cover.cover-right.turn {
+    transform: rotateY(180deg);
+}
+/* 
+.book {
+    width: 50%;
+    height: 100%;
+} */
+
+.profile-page {
+    width: 100%;
+}
+
+img {
+    width: 300px;
+}
