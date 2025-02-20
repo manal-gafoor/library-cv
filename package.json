@@ -7,6 +7,7 @@
     "jquery": "^3.7.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-pageflip": "^2.0.3",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -36,7 +37,6 @@
   "devDependencies": {
     "@types/jquery": "^3.5.32",
     "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "react-flip-page": "^1.6.4"
+    "@types/react-dom": "^19.0.3"
   }
 }

@@ -1,0 +1,10 @@
+.contact-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border: 1px solid #292F2D;
+    padding: 10px;
+    cursor: pointer;
+}
