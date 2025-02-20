@@ -4,8 +4,7 @@ import cv from '../assets/cv.pdf';
 
 const FrontCover = ({book} : { book: React.RefObject<any>}) => {
     return (
-        <div className="page-container">
-            <h1><u><i>Curriculum Vitae</i></u></h1>
+        <div className="page-container no-shadow">   
             <img src="./pic.jpeg"></img>
             <h3>Manal Abdul Gafoor</h3>
             <h4>Front End Developer</h4>
