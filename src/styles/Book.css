@@ -5,11 +5,6 @@
     display: flex;
     justify-content: center; 
     align-items: center;
-    /* rotate: -10deg;
-    scale: 1; */
-    /* position: absolute;
-    top: 30.7%;
-    left: 56.6%; */
 }
 
 .page {
@@ -65,4 +60,11 @@ h1 u {
     bottom: 20px;
     left: 0;
     right: 0;
+}
+
+@media (max-width: 700px) {
+    .open-book {
+        width: 300px;
+        height: 450px; 
+    }
 }

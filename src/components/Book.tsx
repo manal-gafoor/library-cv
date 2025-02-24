@@ -7,6 +7,7 @@ import BackCover from "./BackCover";
 import Experience from "./Experience";
 import Education from "./Education";
 import Skills from "./Skills";
+import SkillsContd from "./SkillsContd";
 
 function Book({ openBook, props } : { openBook: Function, props?: any}) {
   const initialRef: any = null;
@@ -14,7 +15,9 @@ function Book({ openBook, props } : { openBook: Function, props?: any}) {
  
     return (  
       <div className="open-book">
-        <HTMLFlipBook width={450} height={650} showCover={true} {...props} ref={book}>
+        <HTMLFlipBook width={window.innerWidth > 700 ? 450 : 180} 
+        height={window.innerWidth > 700 ? 650 : 250} 
+        showCover={true} {...props} ref={book}>
           <div className="page cover">
             <div className="display-center">
               <div className="border">
@@ -45,13 +48,18 @@ function Book({ openBook, props } : { openBook: Function, props?: any}) {
           </div>
 
           <div className="page">
-            <Education />
+            <SkillsContd />
             <p className="pg-num">5</p>
           </div>
 
           <div className="page">
-            <BackCover />
+            <Education />
             <p className="pg-num">6</p>
+          </div>
+
+          <div className="page">
+            <BackCover />
+            <p className="pg-num">7</p>
           </div>
 
           <div className="page cover">

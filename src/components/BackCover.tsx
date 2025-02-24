@@ -8,7 +8,7 @@ import Web from "../assets/Web";
 
 const BackCover = () => {
     return ( 
-        <div className="page-container">
+        <div className="page-container no-shadow">
             <div className="contact-box">
                 <Phone />
                 <Email />

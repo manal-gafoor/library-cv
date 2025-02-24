@@ -1,52 +1,53 @@
 import React from "react";
-import { frontEnd, backEnd, versionControl, designTools } from "../data";
+import { ideTools, versionControl,
+    planning, optimization, problemSolving } from "../data";
 import '../styles/Pages.scss';
 
 
-const Skills = () => {
+const SkillsContd = () => {
     return ( 
-        <div className="page-container">
-            <h1 className="experience-title"
-            style={{ marginTop: "-53px" }}>
-                <u>My Skills</u>
-            </h1>
+        <div className="page-container no-shadow">
+            <div className="skills-container" 
+            style={{ padding: "40px 30px 0" }}>
 
-            <div className="skills-container">
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>Front-End Technologies:</u></h4>
-                        { frontEnd.map(item => {
-                            return (
-                                <div className="row">
-                                    <div><img src={ "./skills/" + item.icon }></img></div>
-                                    <p>{ item.name }</p>
-                                </div>
-                            )
-                        })}
+                        <h4><u>IDEs & Tools:</u></h4>
+                        {
+                            ideTools.map(item => {
+                                return (
+                                    <div className="row">
+                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <p>{ item.name }</p>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
 
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>Back-End Technologies:</u></h4>
+                        <h4><u>Soft Skills:</u></h4>
                         {
-                            backEnd.map(item => {
+                            problemSolving.map(item => {
                                 return (
                                     <div className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
+                                
                             })
-                        }   
-                    </div>   
+                        }
+                    </div>
                 </div>
-
+                
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>Version Control:</u></h4>
+                        <h4><u>Project Planning:</u></h4>
                         {
-                            versionControl.map(item => {
+                            planning.map(item => {
                                 return (
                                     <div className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
@@ -54,15 +55,15 @@ const Skills = () => {
                                     </div>
                                 )
                             })
-                        }   
+                        }
                     </div>
                 </div>
 
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>UX/UI Design Tools:</u></h4>
+                        <h4><u>Performance Optimization:</u></h4>
                         {
-                            designTools.map(item => {
+                            optimization.map(item => {
                                 return (
                                     <div className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
@@ -70,7 +71,7 @@ const Skills = () => {
                                     </div>
                                 )
                             })
-                        }   
+                        }
                     </div>
                 </div>
             </div>
@@ -78,4 +79,4 @@ const Skills = () => {
     );
 }
  
-export default Skills;
+export default SkillsContd;
