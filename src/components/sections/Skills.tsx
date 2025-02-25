@@ -1,6 +1,6 @@
 import React from "react";
-import { frontEnd, backEnd, versionControl, designTools } from "../data";
-import '../styles/Pages.scss';
+import { frontEnd, backEnd, versionControl, designTools } from "../../data";
+import '../../styles/Pages.scss';
 
 
 const Skills = () => {
@@ -15,9 +15,9 @@ const Skills = () => {
                 <div className="skills">
                     <div className="skill">
                         <h4><u>Front-End Technologies:</u></h4>
-                        { frontEnd.map(item => {
+                        { frontEnd.map((item, index) => {
                             return (
-                                <div className="row">
+                                <div key={index} className="row">
                                     <div><img src={ "./skills/" + item.icon }></img></div>
                                     <p>{ item.name }</p>
                                 </div>
@@ -30,9 +30,9 @@ const Skills = () => {
                     <div className="skill">
                         <h4><u>Back-End Technologies:</u></h4>
                         {
-                            backEnd.map(item => {
+                            backEnd.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
@@ -46,9 +46,9 @@ const Skills = () => {
                     <div className="skill">
                         <h4><u>Version Control:</u></h4>
                         {
-                            versionControl.map(item => {
+                            versionControl.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
@@ -62,9 +62,9 @@ const Skills = () => {
                     <div className="skill">
                         <h4><u>UX/UI Design Tools:</u></h4>
                         {
-                            designTools.map(item => {
+                            designTools.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>

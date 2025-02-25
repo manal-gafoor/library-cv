@@ -1,7 +1,5 @@
 import React from "react";
-import { ideTools, versionControl,
-    planning, optimization, problemSolving } from "../data";
-import '../styles/Pages.scss';
+import { ideTools, planning, optimization, problemSolving } from "../../data";
 
 
 const SkillsContd = () => {
@@ -14,9 +12,9 @@ const SkillsContd = () => {
                     <div className="skill">
                         <h4><u>IDEs & Tools:</u></h4>
                         {
-                            ideTools.map(item => {
+                            ideTools.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
@@ -30,9 +28,9 @@ const SkillsContd = () => {
                     <div className="skill">
                         <h4><u>Soft Skills:</u></h4>
                         {
-                            problemSolving.map(item => {
+                            problemSolving.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
@@ -47,9 +45,9 @@ const SkillsContd = () => {
                     <div className="skill">
                         <h4><u>Project Planning:</u></h4>
                         {
-                            planning.map(item => {
+                            planning.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
@@ -63,9 +61,9 @@ const SkillsContd = () => {
                     <div className="skill">
                         <h4><u>Performance Optimization:</u></h4>
                         {
-                            optimization.map(item => {
+                            optimization.map((item, index) => {
                                 return (
-                                    <div className="row">
+                                    <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>

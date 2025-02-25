@@ -56,7 +56,7 @@ export const backEnd = [
     },
     {
         name: 'GraphQL',
-        icon: 'mysql.svg'
+        icon: 'graphql.png'
     },
     {
         name: 'MySQL',

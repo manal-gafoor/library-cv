@@ -16,11 +16,11 @@ const AboutMe = () => {
                 Experienced Front-End Developer, with <span>5</span> years of delivering
                  beautiful, scalable web apps using <span>React</span>, <span>React 
                  Native</span> and <span>Angular</span>. Proficient in building 
-                 <span>cross-platform</span> and <span>mobile applications</span>. 
+                 <span> cross-platform</span> and <span>mobile applications</span>. 
                  Adept at <span>leading teams</span>, <span>mentoring</span> juniors, 
-                 and <span>collaborating</span> across UX/UI and business teams to deliver high
+                 and <span>collaborating</span> across UX/UI teams to deliver high
                  quality solutions. Skilled in modern frameworks and <span>agile 
-                 methodologies</span> to drive digital transformation. Delivered <span>5+</span> 
+                 methodologies</span> to drive digital transformation. Delivered <span>5+ </span> 
                  talks and <span>published</span> a piece of fiction in 2024. Fluent 
                  in <span>four and half</span> languages, currently learning a 6th.
                 </div>

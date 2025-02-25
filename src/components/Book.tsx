@@ -1,13 +1,15 @@
-import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
+import React from "react";
 import '../styles/Book.css';
 import HTMLFlipBook from "react-pageflip";
-import FrontCover from "./FrontCover";
-import AboutMe from "./AboutMe";
-import BackCover from "./BackCover";
-import Experience from "./Experience";
-import Education from "./Education";
-import Skills from "./Skills";
-import SkillsContd from "./SkillsContd";
+import FrontCover from "./sections/FrontCover";
+import AboutMe from "./sections/AboutMe";
+import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Skills from "./sections/Skills";
+import SkillsContd from "./sections/SkillsContd";
+import Achievements from "./sections/Achievements";
+import Details from "./sections/Details";
 
 function Book({ openBook, props } : { openBook: Function, props?: any}) {
   const initialRef: any = null;
@@ -58,13 +60,23 @@ function Book({ openBook, props } : { openBook: Function, props?: any}) {
           </div>
 
           <div className="page">
-            <BackCover />
+            <Achievements />
             <p className="pg-num">7</p>
+          </div>
+
+          <div className="page">
+            <Details />
+            <p className="pg-num">8</p>
+          </div>
+
+          <div className="page">
+            <Contact />
+            <p className="pg-num">9</p>
           </div>
 
           <div className="page cover">
             <p className="put-back" 
-              onClick={() => { openBook()}}
+              onClick={() => { openBook() }}
             >
               Put me back on the shelf!
             </p>

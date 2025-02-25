@@ -1,5 +1,4 @@
 import React from "react";
-import '../styles/Pages.scss';
 
 const Experience = () => {
     return ( 
