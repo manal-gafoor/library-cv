@@ -1,51 +1,52 @@
 import React from "react";
-import { ideTools, planning, optimization, problemSolving } from "../../data";
+import { frontEnd, backEnd, versionControl, designTools } from "../../../data";
+import '../../../styles/Pages.scss';
 
 
-const SkillsContd = () => {
+const Skills = () => {
     return ( 
-        <div className="page-container no-shadow">
-            <div className="skills-container" 
-            style={{ padding: "40px 30px 0" }}>
+        <div className="page-container">
+            <h1 className="experience-title"
+            style={{ marginTop: "-53px" }}>
+                <u>My Skills</u>
+            </h1>
 
+            <div className="skills-container">
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>IDEs & Tools:</u></h4>
-                        {
-                            ideTools.map((item, index) => {
-                                return (
-                                    <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
-                                        <p>{ item.name }</p>
-                                    </div>
-                                )
-                            })
-                        }
+                        <h4><u>Front-End Technologies:</u></h4>
+                        { frontEnd.map((item, index) => {
+                            return (
+                                <div key={index} className="row">
+                                    <div><img src={ "./skills/" + item.icon }></img></div>
+                                    <p>{ item.name }</p>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
 
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>Soft Skills:</u></h4>
+                        <h4><u>Back-End Technologies:</u></h4>
                         {
-                            problemSolving.map((item, index) => {
+                            backEnd.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
-                                
                             })
-                        }
-                    </div>
+                        }   
+                    </div>   
                 </div>
-                
+
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>Project Planning:</u></h4>
+                        <h4><u>Version Control:</u></h4>
                         {
-                            planning.map((item, index) => {
+                            versionControl.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
@@ -53,15 +54,15 @@ const SkillsContd = () => {
                                     </div>
                                 )
                             })
-                        }
+                        }   
                     </div>
                 </div>
 
                 <div className="skills">
                     <div className="skill">
-                        <h4><u>Performance Optimization:</u></h4>
+                        <h4><u>UX/UI Design Tools:</u></h4>
                         {
-                            optimization.map((item, index) => {
+                            designTools.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
                                         <div><img src={ "./skills/" + item.icon }></img></div>
@@ -69,7 +70,7 @@ const SkillsContd = () => {
                                     </div>
                                 )
                             })
-                        }
+                        }   
                     </div>
                 </div>
             </div>
@@ -77,4 +78,4 @@ const SkillsContd = () => {
     );
 }
  
-export default SkillsContd;
+export default Skills;

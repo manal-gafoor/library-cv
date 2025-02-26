@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/Book.css';
+import '../../styles/Book.css';
 import HTMLFlipBook from "react-pageflip";
 import FrontCover from "./sections/FrontCover";
 import AboutMe from "./sections/AboutMe";
@@ -11,7 +11,7 @@ import SkillsContd from "./sections/SkillsContd";
 import Achievements from "./sections/Achievements";
 import Details from "./sections/Details";
 
-function Book({ openBook, props } : { openBook: Function, props?: any}) {
+function ProfileBook({ openBook, props } : { openBook: Function, props?: any}) {
   const initialRef: any = null;
   const book = React.useRef(initialRef);
  
@@ -94,4 +94,4 @@ function Book({ openBook, props } : { openBook: Function, props?: any}) {
     );
 }
 
-export default Book;
+export default ProfileBook;

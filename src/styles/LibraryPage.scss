@@ -1,0 +1,150 @@
+.library {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.inner {
+  width: auto;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.img {
+  height: 100%;
+  width: auto;
+}
+
+.book {
+  position: absolute;
+  transform: translate(0, -100%);
+  cursor: pointer;
+
+  &.profile-book {
+    top: 30.7%;
+    left: 56.6%;
+    width: 1.8%;
+    height: 14%;
+  }
+
+  &.project-book {
+    top: 78.3%;
+    left: 28.5%;
+    width: 2.5%;
+    height: 12.9%;
+  }
+
+  &.glow {
+    opacity: 0.5;
+    background-color: transparent;
+    box-shadow: 0 0 40px 20px #fff, 0 0 100px 10px rgb(169, 252, 252);
+    animation: glowing 3s ease-in-out infinite forwards;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px 0px #fff, 0 0 20px 0px rgb(169, 252, 252);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px #fff, 0 0 40px 20px rgb(169, 252, 252);
+  }
+  100% {
+    box-shadow: 0 0 10px 0px #fff, 0 0 20px 0px rgb(169, 252, 252);
+  }
+}
+
+.bookshelf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// PROFILE BOOK ANIMATION
+.animated-profile-opening {
+  animation: opening-profile-book 2.5s ease-in-out 1 forwards;
+}
+
+@keyframes opening-profile-book {
+  0% {
+      opacity: 0;
+      top: -14%;
+      left: 32%;
+      transform: scaleX(0.06) scaleY(0.2) rotate(0deg) translate(0%);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+      top: 5%;
+      left: 50%;
+      transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+}
+
+.animated-profile-closing {
+  animation: closing-profile-book 3s ease-in-out;
+}
+
+@keyframes closing-profile-book {
+  0% {
+    opacity: 1;
+    top: 5%;
+    left: 50%;
+    transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+  100% {
+    opacity: 0;
+    top: 5%;
+    left: 50%;
+    transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+}
+
+
+// PROJECTS BOOK ANIMATION
+.animated-project-opening {
+  animation: opening-project-book 2.5s ease-in-out 1 forwards;
+}
+
+@keyframes opening-project-book {
+  0% {
+      opacity: 0;
+      top: 35%;
+      left: 8%;
+      transform: scaleX(0.06) scaleY(0.2) rotate(0deg) translate(0%);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+      top: 5%;
+      left: 50%;
+      transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+}
+
+.animated-project-closing {
+  animation: closing-project-book 3s ease-in-out;
+}
+
+@keyframes closing-project-book {
+  0% {
+    opacity: 1;
+    top: 5%;
+    left: 50%;
+    transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+  100% {
+    opacity: 0;
+    top: 5%;
+    left: 50%;
+    transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+}

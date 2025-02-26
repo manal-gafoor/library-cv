@@ -16,6 +16,10 @@
     color: antiquewhite;
 }
 
+.page.cover.projects {
+    background: linear-gradient(to left, #59917e, #2c4e43);
+}
+
 .display-center {
     width: 100%;
     height: 100%;

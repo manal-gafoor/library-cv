@@ -1,10 +1,10 @@
 import React from "react";
-import '../../styles/BackCover.scss';
-import Phone from "../../assets/Phone";
-import Email from "../../assets/Email";
-import Linkedin from "../../assets/Linkedin";
-import Location from "../../assets/Location";
-import Web from "../../assets/Web";
+import '../../../styles/BackCover.scss';
+import Phone from "../../../assets/Phone";
+import Email from "../../../assets/Email";
+import Linkedin from "../../../assets/Linkedin";
+import Location from "../../../assets/Location";
+import Web from "../../../assets/Web";
 
 const Contact = () => {
     return ( 

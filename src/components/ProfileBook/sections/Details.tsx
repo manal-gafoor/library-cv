@@ -1,5 +1,5 @@
 import React from "react";
-import { statusDetails, languageDetails } from "../../data";
+import { statusDetails, languageDetails } from "../../../data";
 
 const Details = () => {
     return ( 
