@@ -1,0 +1,45 @@
+.each-project {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+    & .project-image {
+        width: 100%;
+        border-radius: 5px;
+        scale: 1;
+        transition: scale 0.3s;
+        
+        &.hover:hover {
+            scale: (1.7);
+        }
+
+        &.landscape {
+            width: 40%;
+        }
+    }
+
+    & .video-container {
+        position: relative;
+
+        & video {
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        & .play {
+            position: absolute;
+            width: 20px;
+            top: 40%;
+            left: 50%;
+            // translate: -50%;
+        }
+    }
+
+    & h6 {
+        font-size: 20px;
+    }
+}

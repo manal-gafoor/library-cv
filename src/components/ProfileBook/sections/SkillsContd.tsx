@@ -1,5 +1,5 @@
 import React from "react";
-import { ideTools, planning, optimization, problemSolving } from "../../../data";
+import { ideTools, planning, optimization, problemSolving } from "../data";
 
 
 const SkillsContd = () => {

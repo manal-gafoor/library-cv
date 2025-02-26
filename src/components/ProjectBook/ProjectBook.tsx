@@ -1,6 +1,8 @@
 import React from "react";
 import '../../styles/Book.css';
 import HTMLFlipBook from "react-pageflip";
+import Description from "./Description";
+import { projectDetails } from "./data";
 
 function ProjectBook({ openBook, props } : { openBook: Function, props?: any}) {
   const initialRef: any = null;
@@ -21,39 +23,66 @@ function ProjectBook({ openBook, props } : { openBook: Function, props?: any}) {
 
           <div className="page cover projects display-center"></div>
 
-          <div className="page">
-            
+          { projectDetails.map(proj => {
+            return (
+              <div className="page">
+                  <Description 
+                      path={proj.path} 
+                      title={proj.title}
+                      text={proj.text}
+                      vid={proj.video}
+                      landscape={proj.landscape}
+                      hover={proj.hover}
+                  />
+                  <p className="pg-num">1</p>
+              </div>
+            )
+          })  
+          }
+
+          {/*<div className="page">
+            <Description
+                vid=""
+                title=""
+             />
             <p className="pg-num">2</p>
           </div>
 
           <div className="page">
-            
+            <Description 
+                img="" 
+                title=""
+            />
             <p className="pg-num">3</p>
           </div>
 
-          <div className="page">
-           
+           <div className="page">
+            <Description 
+                img="" 
+                title="Internal Dashboard"
+            />
             <p className="pg-num">4</p>
           </div>
 
-           <div className="page">
-            
+          <div className="page">
+            <Description 
+                img="" 
+                title="Internal Dashboard"
+            />
             <p className="pg-num">5</p>
           </div>
 
-          {/*<div className="page">
-           
+          <div className="page">
+            <Description 
+                img="" 
+                title="Internal Dashboard"
+            />
             <p className="pg-num">6</p>
           </div>
 
           <div className="page">
            
             <p className="pg-num">7</p>
-          </div>
-
-          <div className="page">
-           
-            <p className="pg-num">8</p>
           </div>
 
           <div className="page">

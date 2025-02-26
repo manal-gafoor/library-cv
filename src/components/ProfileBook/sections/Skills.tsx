@@ -1,6 +1,6 @@
 import React from "react";
-import { frontEnd, backEnd, versionControl, designTools } from "../../../data";
-import '../../../styles/Pages.scss';
+import { frontEnd, backEnd, versionControl, designTools } from "../data";
+import '../../../styles/ProfilePages.scss';
 
 
 const Skills = () => {
