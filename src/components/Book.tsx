@@ -74,9 +74,16 @@ function Book({ openBook, props } : { openBook: Function, props?: any}) {
             <p className="pg-num">9</p>
           </div>
 
+          <div className="page">
+            <div className="page-container">
+              <p>You can find details about my<br></br>
+              projects in the other book!!!</p>
+            </div>
+          </div>
+
           <div className="page cover">
             <p className="put-back" 
-              onClick={() => { openBook() }}
+              onClick={(e) => { e.preventDefault();  openBook() }}
             >
               Put me back on the shelf!
             </p>

@@ -6,9 +6,6 @@ import LibraryPage from './pages/LibraryPage';
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        Library CV
-      </header> */}
       {/* <StarterPage /> */}
       <LibraryPage />
     </div>

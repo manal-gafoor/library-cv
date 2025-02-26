@@ -11,8 +11,8 @@ const Achievements = () => {
                     <div className="achieve">
                         <div className="descript">
                             <h6><u>Opening Keynote Speech!</u></h6>
-                            <p>In February 2024, I delivered my debut speech in front of 550+ people
-                                in the Reframe Women in Tech Conference in Manchester!
+                            <p>In February 2024, I delivered my debut speech in front of <span>550+</span> people
+                                in the <span>Reframe Women in Tech</span> Conference in Manchester!
                             </p>
                         </div>
                         <img src="./reframe.jpg"></img>
@@ -21,14 +21,15 @@ const Achievements = () => {
 
                 <div className="parchment-holder bottom">
                     <img src="./p5.webp" alt="parchment paper" className="parchment" />
-                    <div className="achieve">
+                    <div className="achieve" style={{ right: "0" }}>
+                        <img src="./book.jpeg"></img>
                         <div className="descript">
-                            <p>And in November 2024, I achieved my dream of 25 years to publish
-                            my first piece of fiction titled, 'The Road Up North'!
+                            <p>And in November 2024, I achieved my lifelong dream to publish
+                            my first piece of fiction titled, <span>'The Road Up North'</span>!
                             </p>
                             <h6><u>Published first book!</u></h6>
                         </div>
-                        <img src="./book.jpeg"></img>
+                        
                     </div>
                 </div>
             </div>

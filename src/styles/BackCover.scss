@@ -1,0 +1,25 @@
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    padding: 10px 50px;
+
+    & .each-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        & img {
+            width: 20px;
+        }
+
+        & a {
+            color: #292F2D;
+            cursor: pointer;
+        }
+    }
+}

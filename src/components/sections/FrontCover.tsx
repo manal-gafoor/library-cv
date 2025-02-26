@@ -14,7 +14,7 @@ const FrontCover = ({book} : { book: React.RefObject<any>}) => {
                     Download CV
                 </a>
 
-                <div className="contact-me" onClick={() => book.current!.pageFlip().flip(5)}>
+                <div className="contact-me" onClick={() => book.current!.pageFlip().flip(8)}>
                 Contact Me
             </div>
             </div>
