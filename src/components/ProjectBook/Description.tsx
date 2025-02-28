@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../../styles/ProjectPages.scss";
 
-const Description = ({ path, title, text, vid, landscape, hover }: {
+const Description = ({ keyy, path, title, text, vid, landscape, hover }: {
+    keyy: number,
     path: string,
     title: string,
     text: string,
@@ -9,19 +10,18 @@ const Description = ({ path, title, text, vid, landscape, hover }: {
     landscape: boolean,
     hover: boolean
 }) => {
-    const vidRef = useRef<HTMLVideoElement>(null);
     return ( 
-        <div className="each-project">
-            { !vid && <img src={path} alt="project" 
+        <div className={`each-project ${path === "" ? "justify-center" : ""} ${keyy % 2 === 0 ? "shadow" : ""}`}>
+            { !vid && path && <img src={path} alt="project" 
                 className={`project-image ${hover ? "hover" : ""} 
                 ${ !landscape ? "landscape" : ""}`}></img>}
             { vid && 
             <div className="video-container">
-                <video src={path} muted ref={vidRef}></video>
-                <img src="./projects/play.svg" alt="play" className="play"></img>
+                <video src={path} muted autoPlay loop></video>
             </div>
             }
             <h6><u>{title}</u></h6>
+            <p dangerouslySetInnerHTML={{ __html: text }} ></p>
         </div>
      );
 }

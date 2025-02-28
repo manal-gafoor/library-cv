@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/StarterPage.css';
+import '../styles/StarterPage.scss';
 
 const StarterPage = () => {
   return (

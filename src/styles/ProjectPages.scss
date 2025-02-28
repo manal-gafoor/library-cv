@@ -1,11 +1,23 @@
 .each-project {
     width: 100%;
-    padding: 40px;
+    height: 100%;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    color: #292F2D;
+
+    &.shadow {
+        -webkit-box-shadow: -18px 19px 15px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -18px 19px 15px 0px rgba(0,0,0,0.75);
+        box-shadow: -18px 19px 15px 0px rgba(0,0,0,0.75);
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
 
     & .project-image {
         width: 100%;
@@ -35,11 +47,22 @@
             width: 20px;
             top: 40%;
             left: 50%;
-            // translate: -50%;
         }
     }
 
     & h6 {
         font-size: 20px;
+    }
+
+    & p {
+
+        & a {
+            color: #292F2D;
+            font-weight: bold;
+        }
+
+        & span {
+            font-weight: bold;
+        }
     }
 }

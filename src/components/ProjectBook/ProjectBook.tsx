@@ -25,8 +25,9 @@ function ProjectBook({ openBook, props } : { openBook: Function, props?: any}) {
 
           { projectDetails.map(proj => {
             return (
-              <div className="page">
+              <div key={proj.key} className="page">
                   <Description 
+                      keyy={proj.key}
                       path={proj.path} 
                       title={proj.title}
                       text={proj.text}
@@ -34,61 +35,11 @@ function ProjectBook({ openBook, props } : { openBook: Function, props?: any}) {
                       landscape={proj.landscape}
                       hover={proj.hover}
                   />
-                  <p className="pg-num">1</p>
+                  <p className="pg-num">{proj.key}</p>
               </div>
             )
           })  
           }
-
-          {/*<div className="page">
-            <Description
-                vid=""
-                title=""
-             />
-            <p className="pg-num">2</p>
-          </div>
-
-          <div className="page">
-            <Description 
-                img="" 
-                title=""
-            />
-            <p className="pg-num">3</p>
-          </div>
-
-           <div className="page">
-            <Description 
-                img="" 
-                title="Internal Dashboard"
-            />
-            <p className="pg-num">4</p>
-          </div>
-
-          <div className="page">
-            <Description 
-                img="" 
-                title="Internal Dashboard"
-            />
-            <p className="pg-num">5</p>
-          </div>
-
-          <div className="page">
-            <Description 
-                img="" 
-                title="Internal Dashboard"
-            />
-            <p className="pg-num">6</p>
-          </div>
-
-          <div className="page">
-           
-            <p className="pg-num">7</p>
-          </div>
-
-          <div className="page">
-           
-            <p className="pg-num">9</p>
-          </div> */}
 
           <div className="page cover projects">
             <p className="put-back" 
