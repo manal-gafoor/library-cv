@@ -14,7 +14,7 @@ const Description = ({ keyy, path, title, text, vid, landscape, hover }: {
         <div className={`each-project ${path === "" ? "justify-center" : ""} ${keyy % 2 === 0 ? "shadow" : ""}`}>
             { !vid && path && <img src={path} alt="project" 
                 className={`project-image ${hover ? "hover" : ""} 
-                ${ !landscape ? "landscape" : ""}`}></img>}
+                ${ !landscape ? "portrait" : ""}`}></img>}
             { vid && 
             <div className="video-container">
                 <video src={path} muted autoPlay loop></video>

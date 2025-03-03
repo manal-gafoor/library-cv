@@ -39,7 +39,11 @@
     opacity: 0.5;
     background-color: transparent;
     box-shadow: 0 0 40px 20px #fff, 0 0 100px 10px rgb(169, 252, 252);
-    animation: glowing 3s ease-in-out infinite forwards;
+    animation: glowing 2s ease-in-out infinite forwards;
+  }
+
+  &.glow2 {
+    animation: glowing 3s ease-in-out 1.5s infinite forwards;
   }
 }
 
@@ -146,5 +150,24 @@
     top: 5%;
     left: 50%;
     transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+  }
+}
+
+@media (max-width: 900px) {
+  @keyframes opening-profile-book {
+    0% {
+        opacity: 0;
+        top: -35%;
+        left: 13%;
+        transform: scaleX(0.06) scaleY(0.2) rotate(0deg) translate(0%);
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+        top: -5%;
+        left: 50%;
+        transform: scaleX(1) scaleY(1) rotate(-5deg) translate(-50%);
+    }
   }
 }

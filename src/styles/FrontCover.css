@@ -47,3 +47,25 @@ h4 {
     color: antiquewhite;
     text-decoration: none;
 }
+
+@media (max-width: 900px) {
+    .page img {
+        width: 65px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+    
+    h4 {
+        font-size: 11px;
+    }
+
+    .ctas a,div {
+        font-size: 10px;
+    }
+
+    .contact-me {
+        padding: 3px;
+    }
+}

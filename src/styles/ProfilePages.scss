@@ -30,51 +30,52 @@
     border-left: 2px solid #292F2D;
     padding: 0 25px;
     margin-left: 30px;
-}
 
-.experience-title u {
-    font-size: 32px;
-}
+    & .experience-title u {
+        font-size: 32px;
+    }
 
-.full-experience .experience {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    & h3 {
-        margin: 0 0 5px;
-        position: relative;
-        font-size: 17px;
-
-        &::before {
-            content: "";
-            display: block;
-            height: 15px;
-            width: 15px;
-            rotate: 45deg;
-            background-color: #292F2D;
-            position: absolute;
-            left: -33px;
+    & .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+        & h3 {
+            margin: 0 0 5px;
+            position: relative;
+            font-size: 17px;
+    
+            &::before {
+                content: "";
+                display: block;
+                height: 15px;
+                width: 15px;
+                rotate: 45deg;
+                background-color: #292F2D;
+                position: absolute;
+                left: -33px;
+            }
         }
-    }
-
-    & p {
-        margin-bottom: 8px;
-        font-size: 14px;
-        font-weight: bold;
-        color: #814834;
-    }
-
-    & ul {
-        padding-left: 20px;
-
-        & li {
+    
+        & p {
+            margin-bottom: 8px;
             font-size: 14px;
-            text-align: left;
+            font-weight: bold;
+            color: #814834;
+        }
+    
+        & ul {
+            padding-left: 20px;
+    
+            & li {
+                font-size: 14px;
+                text-align: left;
+            }
         }
     }
 }
+
 
 
 // SKILLS PAGE
@@ -263,6 +264,165 @@
         & a, p {
             color: #292F2D;
             font-size: 14px;
+        }
+    }
+}
+
+
+// RESPONSIVENESS
+@media (max-width: 900px) {
+    .about-me {
+        gap: 15px;
+    
+        & .overview {
+            padding: 0 20px;
+            line-height: 1.3;
+        }
+
+        & p, .overview {
+            font-size: 7px;
+        }
+    }
+
+    .experience-title u {
+        font-size: 14px;
+    }
+
+    .full-experience {
+        gap: 5px;
+        padding: 0 5px;
+        margin-left: 10px;
+    
+        & .experience {
+            & h3 {
+                margin: 0 0 2px;
+                font-size: 10px;
+        
+                &::before {
+                    height: 5px;
+                    width: 5px;
+                    left: -9px;
+                }
+            }
+        
+            & p {
+                margin-bottom: 5px;
+                font-size: 5px;
+            }
+        
+            & ul {
+                padding-left: 10px;
+        
+                & li {
+                    font-size: 6px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+
+    .skills-container {
+        gap: 3px;
+    }
+
+    .skills {
+        gap: 2px;
+    
+        & .skill {
+            gap: 2px;
+    
+            & h4 {
+                margin-bottom: 5px;
+
+                & u {
+                    font-size: 7px;
+                }
+            }
+    
+            & .row {
+                gap: 5px;
+                line-height: 1.1;
+    
+                & div{
+                    width: 5px;
+                }
+    
+                & p {
+                    font-size: 6px;
+                }
+    
+                & img {
+                    max-height: 5px;
+                    max-width: 5px;
+                }
+            }
+        }
+    }
+
+    .education {
+        & p {
+            margin-bottom: 8px;
+            font-size: 7px;
+    
+            & span {
+                font-weight: normal;
+            }
+        }
+    }
+    
+    .certifications {
+        gap: 5px;
+        padding: 0 15px;
+    }
+
+    .achievements-card {
+        width: 100%;
+        padding: 0 10px;
+    
+        & .parchment-holder {
+            height: 90px;
+    
+            .achieve {
+                top: 10px;
+                width: 90%;
+    
+                & .descript {
+                    gap: 5px;
+    
+                    & h6 {
+                        font-size: 8px;
+                        
+                    }
+    
+                    & p {
+                        font-size: 7px;
+                    }
+                }
+    
+                & img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    .details {
+        gap: 5px;
+        padding: 0 15px;
+    
+        & .deet {    
+            & h4 {
+                font-size: 10px;
+                margin: 5px 0;
+            }
+    
+            & .row {
+                margin: 3px 0 0;
+            }
+    
+            & a, p {
+                font-size: 7px;
+            }
         }
     }
 }

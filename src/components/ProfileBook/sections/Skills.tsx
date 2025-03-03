@@ -7,7 +7,9 @@ const Skills = () => {
     return ( 
         <div className="page-container">
             <h1 className="experience-title"
-            style={{ marginTop: "-53px" }}>
+            style={{ marginTop: window.innerWidth > 900 ? "-53px" : "-5px",
+                padding: window.innerWidth > 900 ? "0" : "0 10px" 
+             }}>
                 <u>My Skills</u>
             </h1>
 

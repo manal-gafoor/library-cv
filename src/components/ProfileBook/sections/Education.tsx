@@ -4,13 +4,13 @@ const Education = () => {
     return ( 
         <div className="page-container">
             <h1 className="experience-title"><u>Education</u></h1>
-            <div className="education" style={{ padding: "0 50px" }}>
+            <div className="education" style={{ padding: window.innerWidth > 900 ? "0 50px" : "0 15px" }}>
                 <p>BACHELOR OF TECHNOLOGY in COMPUTER SCIENCE ENGINEERING<br></br>
                 <span>University of Calicut, India </span></p>
             </div>
             
 
-            <h1 className="experience-title" style={{ marginTop: "40px" }}><u>Certifications</u></h1>
+            <h1 className="experience-title" style={{ marginTop: window.innerWidth > 900 ? "40px": "5px" }}><u>Certifications</u></h1>
             <div className="education certifications">
                 <p>Angular - The Complete Guide<br></br>
                 <span>Udemy  •  2023</span></p>

@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
     return ( 
         <div className="page-container">
-            <h1 className="experience-title" style={{ marginBottom: "50px" }}><u>About Me</u></h1>
+            <h1 className="experience-title" style={{ marginBottom: window.innerWidth > 900 ? "50px" : "" }}><u>About Me</u></h1>
 
             <div className="about-me">
                 <div className="quick">

@@ -213,4 +213,18 @@ export const projectDetails = [
         landscape: false,
         hover: false
     },
+    {
+        key: 12,
+        path: "./projects/pick-a-path1.png",
+        video: false,
+        title: "Pick-A-Path Game",
+        text: `Pick-A-Path is an interactive, <span>choice-driven game</span> where 
+        players navigate through different storylines based on the 
+        decisions they make. Each choice influences the game's outcome, 
+        offering a unique experience every time. Originally launched on 
+        <span>Google Play</span>, this project showcases my ability to design engaging 
+        narrative experiences with simple yet captivating gameplay.`,
+        landscape: false,
+        hover: false
+    },
 ];

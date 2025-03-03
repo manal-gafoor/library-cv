@@ -23,3 +23,22 @@
         }
     }
 }
+
+
+@media (max-width: 900px) { 
+    .contact-box {
+        gap: 5px;
+        width: 80%;
+        padding: 5px 10px;
+    
+        & .each-row {    
+            & img {
+                width: 12px;
+            }
+
+            & p, a {
+                font-size: 9px;
+            }
+        }
+    }
+}

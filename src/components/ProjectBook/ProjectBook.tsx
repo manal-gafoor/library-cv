@@ -10,8 +10,8 @@ function ProjectBook({ openBook, props } : { openBook: Function, props?: any}) {
  
     return (  
       <div className="open-book">
-        <HTMLFlipBook width={window.innerWidth > 700 ? 450 : 180} 
-        height={window.innerWidth > 700 ? 650 : 250} 
+        <HTMLFlipBook width={window.innerWidth > 900 ? 450 : 200} 
+        height={window.innerWidth > 900 ? 650 : 270} 
         showCover={true} {...props} ref={book}>
           <div className="page cover projects">
             <div className="display-center">

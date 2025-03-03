@@ -6,7 +6,7 @@ const SkillsContd = () => {
     return ( 
         <div className="page-container no-shadow">
             <div className="skills-container" 
-            style={{ padding: "40px 30px 0" }}>
+            style={{ padding: window.innerWidth > 900 ? "40px 30px 0" : "15px" }}>
 
                 <div className="skills">
                     <div className="skill">

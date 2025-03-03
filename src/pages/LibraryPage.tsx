@@ -43,7 +43,7 @@ const LibraryPage = () => {
             <div className={`book profile-book ${ !isProfileBookOpen ? "glow" : ""}`}
             onClick={() => setIsProfileBookOpen(true)}></div>
 
-            <div className={`book project-book ${ !isProjectsBookOpen ? "glow" : ""}`}
+            <div className={`book project-book ${ !isProjectsBookOpen ? "glow glow2" : ""}`}
             onClick={() => setIsProjectsBookOpen(true)}></div>
 
             <img src={"library-bg.jpg"} height="2848" width="4288" className="img" alt='library' />
