@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../styles/FrontCover.css';
+import '../../../styles/FrontCover.scss';
 import cv from '../../../assets/cv.pdf';
 
 const FrontCover = ({book} : { book: React.RefObject<any>}) => {

@@ -6,7 +6,7 @@ import LibraryPage from './pages/LibraryPage';
 function App() {
   return (
     <div className="App">
-      {/* <StarterPage /> */}
+      <StarterPage />
       <LibraryPage />
     </div>
   );

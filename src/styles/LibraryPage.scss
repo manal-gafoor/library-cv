@@ -70,6 +70,51 @@
   left: 0;
 }
 
+.pointers-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: wait;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+
+  &.invisible {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  & .bubble {
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 50%;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 40px 60px;
+    box-shadow: 0 0 40px 20px #fff, 0 0 10px 10px rgba(169, 252, 252, 0.89);
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    animation: glowing 2s ease-in-out infinite forwards;
+
+    &.bubble1 {
+      top: 10%;
+      left: 38%;
+
+      & img {
+        transform: rotateY(180deg) rotateZ(60deg) translateY(20px);
+      }
+    }
+  }
+
+  & img {
+    width: 100px;
+  }
+}
+
 // PROFILE BOOK ANIMATION
 .animated-profile-opening {
   animation: opening-profile-book 2.5s ease-in-out 1 forwards;

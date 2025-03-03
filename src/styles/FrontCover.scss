@@ -10,23 +10,25 @@
     -webkit-box-shadow: -18px 19px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -18px 19px 15px 0px rgba(0,0,0,0.75);
     box-shadow: -18px 19px 15px 0px rgba(0,0,0,0.75);
-}
 
-.page-container.no-shadow {
-    box-shadow: none;
+    &.no-shadow {
+        box-shadow: none;
+    }
+
+    & h3 {
+        margin: 16px;
+    }
+    
+    & h4 {
+        margin-bottom: 20px;
+    }
 }
 
 .page img {
     width: 230px;
 }
 
-h3 {
-    margin: 16px;
-}
 
-h4 {
-    margin-bottom: 20px;
-}
 
 .ctas {
     display: flex;

@@ -6,6 +6,7 @@ import ProjectBook from '../components/ProjectBook/ProjectBook';
 const LibraryPage = () => {
   const [isProfileBookOpen, setIsProfileBookOpen] = useState(false);
   const [isProjectsBookOpen, setIsProjectsBookOpen] = useState(false);
+  const [pointing, setPointing] = useState(true);
    const openProfile = React.useRef<HTMLDivElement>(null);
    const openProject = React.useRef<HTMLDivElement>(null);
   
@@ -15,6 +16,10 @@ const LibraryPage = () => {
 
       openProfile.current?.classList.add("animated-profile-opening");
       openProject.current?.classList.add("animated-project-opening");
+
+      setTimeout(() => {
+        setPointing(false);
+      }, 13000);
     }, [isProfileBookOpen, isProjectsBookOpen]);
 
     const openProfileBook = () => {
@@ -60,6 +65,19 @@ const LibraryPage = () => {
             <ProjectBook openBook={openProjectsBook} />
           </div>
         }
+
+        <div className={`pointers-div ${ !pointing ? "invisible" : "" }`}>
+          <div className="bubble bubble1">
+            <h3>You can find my<br></br>profile details here!</h3>
+            <img src="./arrow3.svg" alt="arrow" />
+          </div>
+          
+          <div className="bubble">
+            <h3>And my project<br></br>details here!</h3>
+            <img src="./arrow3.svg" alt="arrow" />
+          </div>
+
+        </div>
     </div>
   );
 }
