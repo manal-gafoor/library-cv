@@ -15,7 +15,7 @@ const SkillsContd = () => {
                             ideTools.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
@@ -31,7 +31,7 @@ const SkillsContd = () => {
                             problemSolving.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
@@ -48,7 +48,7 @@ const SkillsContd = () => {
                             planning.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
@@ -64,7 +64,7 @@ const SkillsContd = () => {
                             optimization.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )

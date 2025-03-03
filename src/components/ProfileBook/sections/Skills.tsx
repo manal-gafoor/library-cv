@@ -20,7 +20,7 @@ const Skills = () => {
                         { frontEnd.map((item, index) => {
                             return (
                                 <div key={index} className="row">
-                                    <div><img src={ "./skills/" + item.icon }></img></div>
+                                    <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                     <p>{ item.name }</p>
                                 </div>
                             )
@@ -35,7 +35,7 @@ const Skills = () => {
                             backEnd.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
@@ -51,7 +51,7 @@ const Skills = () => {
                             versionControl.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )
@@ -67,7 +67,7 @@ const Skills = () => {
                             designTools.map((item, index) => {
                                 return (
                                     <div key={index} className="row">
-                                        <div><img src={ "./skills/" + item.icon }></img></div>
+                                        <div><img src={ "./skills/" + item.icon } alt={item.name}></img></div>
                                         <p>{ item.name }</p>
                                     </div>
                                 )

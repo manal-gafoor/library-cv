@@ -15,14 +15,14 @@ const Achievements = () => {
                                 in the <span>Reframe Women in Tech</span> Conference in Manchester!
                             </p>
                         </div>
-                        <img src="./reframe.jpg"></img>
+                        <img src="./reframe.jpg" alt="on-stage"></img>
                     </div>  
                 </div>
 
                 <div className="parchment-holder bottom">
                     <img src="./p5.webp" alt="parchment paper" className="parchment" />
                     <div className="achieve" style={{ right: "0" }}>
-                        <img src="./book.jpeg"></img>
+                        <img src="./book.jpeg" alt="first-book"></img>
                         <div className="descript">
                             <p>And in November 2024, I achieved my lifelong dream to publish
                             my first piece of fiction titled, <span>'The Road Up North'</span>!

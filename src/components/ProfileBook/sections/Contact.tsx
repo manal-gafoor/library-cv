@@ -22,17 +22,17 @@ const Contact = () => {
 
                 <div className="each-row">
                     <Email height={window.innerWidth > 900 ? "22px" : "12px"} />
-                    <a href="mailto:manalgafoor24@gmail.com" target="_blank">manalgafoor24@gmail.com</a>
+                    <a href="mailto:manalgafoor24@gmail.com" target="_blank" rel="noopener noreferrer">manalgafoor24@gmail.com</a>
                 </div>
 
                 <div className="each-row">
                     <Linkedin height={window.innerWidth > 900 ? "20px" : "13px"} />
-                    <a href="https://www.linkedin.com/in/manalabdulgafoor/" target="_blank">My LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/manalabdulgafoor/" target="_blank" rel="noopener noreferrer">My LinkedIn</a>
                 </div>
 
                 <div className="each-row">
                     <img src="./github.svg" alt="github"></img>
-                    <a href="https://github.com/manal-gafoor" target="_blank">My GitHub</a>
+                    <a href="https://github.com/manal-gafoor" target="_blank" rel="noopener noreferrer">My GitHub</a>
                 </div>
             </div>
         </div>

@@ -5,12 +5,13 @@ import cv from '../../../assets/cv.pdf';
 const FrontCover = ({book} : { book: React.RefObject<any>}) => {
     return (
         <div className="page-container no-shadow">   
-            <img src="./pic.jpeg"></img>
+            <img src="./pic.jpeg" alt="profile-pic"></img>
             <h3>Manal Abdul Gafoor</h3>
             <h4>Front End Developer</h4>
 
             <div className="ctas">
-                <a href={cv} download="ManalGafoor_CV" target="_blank" className="contact-me download-cv">
+                <a href={cv} download="ManalGafoor_CV" target="_blank" 
+                rel="noopener noreferrer" className="contact-me download-cv">
                     Download CV
                 </a>
 
