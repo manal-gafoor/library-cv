@@ -63,8 +63,10 @@ h1 u {
     cursor: pointer;
     position: absolute;
     bottom: 20px;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 15px;
+    border: 1px solid antiquewhite;
 }
 
 @media (max-width: 900px) {
