@@ -5,10 +5,6 @@
 
 This is a portfolio website built with create-react-app, showcasing my front end abilities. The project uses react-pageflip to for the page-turning effect of the books.
 
-<!-- <video controls src="video.mp4" title="Portfolio Website"></video> -->
-
-[![Watch the video](https://github.com/manal-gafoor/library-cv/blob/main/public/library-bg.jpg)](https://github.com/manal-gafoor/library-cv/blob/main/video.mp4)
-
 This portfolio works best on a laptop or a monitor. Though it is responsive, viewing it on smartphones mean the books are small to fit into screen, and hence the text will be slightly difficult to read. Hence, if you are on a smartphone, the website will redirect you to my Angular, mobile friendly page.
 
 
